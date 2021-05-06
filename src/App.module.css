@@ -1,0 +1,104 @@
+.Ui {
+  position: relative;
+  color: white;
+  max-width: 40em;
+  margin:15em auto;
+  background-color: crimson;
+  box-shadow: 2px 2px 7px 4px rgb(0,0,0,0.34);
+  border-radius: 20px;
+}
+
+.box{
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10em;
+}
+.questionSection{
+  display: flex;
+  flex-direction: column;
+  padding: .6em;
+  gap: 1em;
+  font-size: 20px;
+  border:2px solid white;
+  box-shadow: 2px 3px 4px 1px rgb(0,0,0,0.74);
+  transition: 1s;
+  border-radius: 5px 60px;
+}
+.questionSection:hover{
+  border-radius: 5px 10px;
+  color:crimson;
+  background-color: white;
+}
+.optionSection p{
+  padding:.2em;
+  text-align: center;
+  color:white;
+  background-color: coral;
+  font-weight: 900;
+  box-shadow: 2px 3px 4px 1px rgb(0,0,0,0.45);
+}
+.optionSection p:hover{
+  cursor: pointer;
+  background-color: black;
+}
+
+.score{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  gap: 2em;
+}
+.score span{
+  background-color: coral;
+  font-weight: 900;
+  box-shadow: 3px 4px 2px 3px rgb(0,0,0,0.34);
+  padding: .3em;
+  font-size: x-large;
+}
+
+.score button{
+ padding: .3em;
+ text-transform: uppercase;
+ font-weight: 900;
+ background-color: coral;
+ font-size: x-large;
+ color: white;
+ box-shadow: 3px 4px 2px 3px rgb(0,0,0,0.34);
+}
+
+.wrong{
+  background: white;
+  color:black;
+}
+
+@media (min-width:768px) {
+  .Ui{
+    width:40rem;
+  }
+
+}
+.timer{
+  position: absolute;
+  z-index: 1;
+  background: rgb(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width:5em;
+  height: 3em;
+  top:30%;
+  left:47%;
+  border-radius: 10px;
+  color: white;
+  transition: 2s linear;
+}
+
+@media (width:411px){
+  .timer{
+    border:2px solid salmon;
+  }
+}
